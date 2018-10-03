@@ -249,6 +249,9 @@ class HttpTestClient implements HttpClient {
     );
     return new Future.value(response);
   }
+
+  @override
+  Duration connectionTimeout;
 }
 
 /// A fake [HttpClientResponse] to return in a [RequestCallback].
